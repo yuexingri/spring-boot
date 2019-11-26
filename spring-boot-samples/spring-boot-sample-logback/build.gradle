@@ -1,6 +1,6 @@
 buildscript {
 	ext {
-		springBootVersion = '1.5.16.RELEASE'
+		springBootVersion = '1.5.16.0-kylin-r1'
 	}
 	repositories {
 		// NOTE: You should declare only repositories that you need here

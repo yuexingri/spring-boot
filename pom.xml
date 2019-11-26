@@ -3,7 +3,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>org.springframework.boot</groupId>
 	<artifactId>spring-boot-build</artifactId>
-	<version>1.5.16.RELEASE</version>
+	<version>1.5.16.0-kylin-r1</version>
 	<packaging>pom</packaging>
 	<name>Spring Boot Build</name>
 	<description>Spring Boot Build</description>
@@ -46,6 +46,18 @@
 	<properties>
 		<main.basedir>${basedir}</main.basedir>
 	</properties>
+	<distributionManagement>
+		<snapshotRepository>
+			<id>user-snapshots</id>
+			<name>User Project SNAPSHOTS</name>
+			<url>http://repository.kyligence.io:8081/repository/maven-snapshots/</url>
+		</snapshotRepository>
+		<repository>
+			<id>user-releases</id>
+			<name>User Project Release</name>
+			<url>http://repository.kyligence.io:8081/repository/maven-releases/</url>
+		</repository>
+	</distributionManagement>
 	<build>
 		<pluginManagement>
 			<plugins>
